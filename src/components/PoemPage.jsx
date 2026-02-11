@@ -26,11 +26,11 @@ const poemSections = [
   },
   {
     photo: doggo,
-    verse: `you see one dog and suddenly\nI don't exist anymore.\nit's fine. I'm not jealous.\n(I'm very jealous.)`,
+    verse: `shawty and a doggo`,
   },
   {
     photo: me,
-    verse: `you're not even trying here\nand you still look like that??\nthat's just disrespectful honestly.`,
+    verse: `shawty and her doggo`,
   },
   {
     photo: sleepy,
@@ -38,7 +38,7 @@ const poemSections = [
   },
   {
     photo: drunk,
-    verse: `drunk kuru is a different species entirely.\nyou're probaly off helping someone you just met, you probably lost a shoe.\nstill the most entertaining person in any room.`,
+    verse: `we both know who handles their alcohol better ;)`,
   },
   {
     photo: annoyed,
@@ -50,7 +50,7 @@ const poemSections = [
   },
   {
     photo: glowing,
-    verse: `you steal my clothes, I eat your snacks,\nI hog the bed, you judge my music.\nand I wouldn't trade a single bit of it.`,
+    verse: `To the sweetest and coolest girl I know. Happy valentines kuru baba❤️`,
   },
 ]
 
@@ -173,9 +173,9 @@ function PoemPage() {
 
       <div className="poem-finale">
         <p className="poem-finale-text">
-          ok fine I love you or whatever.
+          I love you or whatever..
           <br />
-          like a lot. an embarrassing amount actually. To the sweetest and coolest girl I know. Happy valentines kuru baba. Okay now go get ready, we're LATE.
+          like a lot. an embarrassing amount actually. Okay now go get ready, we're LATE.
         </p>
         <div className="poem-finale-heart">&#10084;&#65039;</div>
       </div>
