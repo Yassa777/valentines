@@ -43,13 +43,14 @@ const poemSections = [
   {
     photo: annoyed,
     verse: `this is the face I get\nright after I'vve said some dumb shit.`
+  },
   {
     photo: sexy,
-    verse: `and then you go and look like THIS.\nlike hello?? Leave junior alone shawty.`,
+    verse: `and then you go and look like THIS.\nlike hello?? Leave junior alone shawty.`
   },
   {
     photo: glowing,
-    verse: `you steal my clothes, I eat your snacks,\nI hog the bed, you judge my music.\nand I wouldn't trade a single bit of it.\nhappy valentines my kuru baba.\n.`,
+    verse: `you steal my clothes, I eat your snacks,\nI hog the bed, you judge my music.\nand I wouldn't trade a single bit of it.`,
   },
 ]
 
@@ -174,7 +175,7 @@ function PoemPage() {
         <p className="poem-finale-text">
           ok fine I love you or whatever.
           <br />
-          like a lot. an embarrassing amount actually.
+          like a lot. an embarrassing amount actually. To the sweetest and coolest girl I know. Happy valentines kuru baba. Okay now go get ready, we're LATE.
         </p>
         <div className="poem-finale-heart">&#10084;&#65039;</div>
       </div>
