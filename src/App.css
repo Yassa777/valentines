@@ -1,0 +1,301 @@
+/* Landing Page */
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0e6d3;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Hero Image */
+.hero-image {
+  max-width: 550px;
+  width: 90vw;
+  height: auto;
+  margin-bottom: 0rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Title */
+.landing-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #8b7d3c;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Password Input */
+.password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.password-input {
+  width: 400px;
+  max-width: 90vw;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d9d2c7;
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #5a5a5a;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.password-input::placeholder {
+  color: #8a8278;
+}
+
+.password-input:focus {
+  background-color: #cfc8bb;
+}
+
+.password-hint {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: #8b7d3c;
+  font-style: italic;
+}
+
+.password-error {
+  color: #c0392b;
+  font-size: 0.85rem;
+  font-style: italic;
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+/* Poem Page */
+.poem-page {
+  min-height: 100vh;
+  background-color: #f0e6d3;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.poem-hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.poem-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #8b7d3c;
+  margin-bottom: 0.5rem;
+}
+
+.poem-hero-subtitle {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  color: #a0936e;
+  font-style: italic;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #a0936e;
+  font-size: 0.85rem;
+  font-style: italic;
+  animation: bounce 2s ease infinite;
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #a0936e;
+  border-bottom: 2px solid #a0936e;
+  transform: rotate(45deg);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+}
+
+/* Poem Sections */
+.poem-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.poem-section:nth-child(even) {
+  flex-direction: row;
+}
+
+.poem-section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.poem-section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.poem-section:nth-child(odd) .poem-section-content {
+  flex-direction: row-reverse;
+}
+
+.poem-photo-wrapper {
+  flex: 0 0 380px;
+  position: relative;
+}
+
+.poem-photo {
+  width: 380px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease;
+}
+
+.poem-photo:hover {
+  transform: scale(1.02) rotate(1deg);
+}
+
+.poem-text-block {
+  flex: 1;
+  max-width: 400px;
+}
+
+.poem-verse {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #5e5535;
+  line-height: 1.8;
+}
+
+/* Finale */
+.poem-finale {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.poem-finale-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #8b7d3c;
+  line-height: 1.6;
+}
+
+.poem-finale-heart {
+  font-size: 4rem;
+  animation: heartbeat 1.5s ease infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.15); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.1); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-image {
+    max-width: 400px;
+  }
+
+  .landing-title {
+    font-size: 2.2rem;
+  }
+
+  .poem-section-content {
+    flex-direction: column !important;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .poem-photo-wrapper {
+    flex: none;
+  }
+
+  .poem-photo {
+    width: 300px;
+    height: 380px;
+  }
+
+  .poem-text-block {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .poem-verse {
+    font-size: 1.3rem;
+  }
+
+  .poem-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .poem-finale-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-image {
+    max-width: 300px;
+  }
+
+  .landing-title {
+    font-size: 1.8rem;
+  }
+
+  .password-input {
+    width: 280px;
+  }
+
+  .poem-photo {
+    width: 260px;
+    height: 340px;
+  }
+}
