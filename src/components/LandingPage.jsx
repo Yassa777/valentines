@@ -36,7 +36,7 @@ function LandingPage({ onUnlock }) {
         <p className="password-hint">
           hint : what very sentimental thing of mine have you lost ?
         </p>
-        {error && <p className="password-error">that's not it, try again!</p>}
+        {error && <p className="password-error">try again bossa</p>}
       </form>
     </div>
   )
